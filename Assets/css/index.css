@@ -1,0 +1,295 @@
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&family=Space+Grotesk:wght@400;700&display=swap');
+     :root {
+        --yellowColor: #FFFF00;
+        --yellowColorThin: #F8F184;
+        --blueColor: #19587D;
+        --redColor: #B11313;
+        --primary-black-color: #000000;
+        --secondary-black-color: #0D0E09;
+        --primary-gray-color: #C4C4C4;
+        --primary-white-color: #FFFFFF;
+    }
+    /*
+*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+    }
+    
+    body {
+        font-size: 12px;
+        scroll-behavior: smooth;
+        color: var(--primary-white-color);
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    
+    .container {
+        border-left: 1.5px solid var(--primary-gray-color);
+        border-right: 1.5px solid var(--primary-gray-color);
+    }
+    
+    header {
+        background: url(../img/Home/Bathome1.png) no-repeat;
+        background-position: center right;
+        background-size: cover;
+        height: 900px;
+    }
+    
+    .header-top {
+        height: 900px;
+        padding: 0;
+    }
+    
+    header nav {
+        display: flex;
+        padding-top: 2%;
+        font-size: 36px;
+        margin: 0 5%;
+        justify-content: space-between;
+        font-family: 'Rajdhani', sans-serif;
+    }
+    
+    ul li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--primary-white-color);
+    }
+    
+    a:hover {
+        color: #FFFFFF;
+    }
+    
+    hr {
+        border: 2px solid;
+    }
+    
+    .box {
+        font-size: 18px;
+        padding-top: 15%;
+    }
+    
+    h1 {
+        font-size: 36px;
+        font-family: 'Rajdhani', sans-serif;
+    }
+    
+    .social-media {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 6%;
+        z-index: 7;
+        top: 25%;
+    }
+    
+    .media {
+        filter: grayscale(1);
+    }
+    
+    .yellow {
+        filter: grayscale(0);
+    }
+    
+    .btn {
+        opacity: 0.7;
+        padding: 15px 70px;
+        font-weight: bold;
+        font-size: 20px;
+        color: var(--primary-white-color);
+        font-family: 'Rajdhani', sans-serif;
+        background: linear-gradient(to bottom right, #EDDEBF 0%, #890008 100%);
+    }
+    
+    .downArrow {
+        cursor: pointer;
+        padding-bottom: 10%;
+    }
+    
+    .content {
+        margin: 0 7%;
+        font-size: 18px;
+    }
+    
+    #black {
+        background: var(--primary-black-color);
+    }
+    
+    .card-image {
+        text-align: center;
+        word-spacing: 4rem;
+    }
+    
+    #slider {
+        background: url(../img/Home/Batslider1.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 565px;
+    }
+    
+    .slider {
+        height: 565px;
+    }
+    
+    #nemesis {
+        background: var(--primary-black-color);
+    }
+    
+    #multimedia {
+        background: var(--primary-black-color);
+    }
+    
+    .multimedia {
+        margin: 0 7%;
+    }
+    
+    .card {
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .card-multimedia {
+        color: var(--primary-gray-color);
+    }
+    
+    .card-body {
+        border-radius: 0 10px 10px 0;
+        background: linear-gradient(to bottom right, #47453d 0%, #0c202b 100%);
+    }
+    
+    .left-arrow,
+    .right-arrow {
+        cursor: pointer;
+    }
+    
+    #newsletter {
+        height: 700px;
+        position: relative;
+        background: linear-gradient(to bottom right, #47453d 0%, #0c202b 100%);
+    }
+    
+    #popUpBox {
+        top: 20%;
+        left: 50%;
+        width: 40vw;
+        height: 400px;
+        display: none;
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        border-radius: 10px;
+        opacity: 0.7;
+        transform: translate(-50%);
+        font-family: 'Space Grotesk', sans-serif;
+        background: linear-gradient(to bottom right, #EDDEBF 0%, #19587D 100%);
+    }
+    
+    #closeBtn {
+        float: right;
+        font-size: 17px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    #msg {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .formulaire {
+        display: grid;
+        place-items: center;
+        font-family: 'Rajdhani', sans-serif;
+    }
+    
+    input[type="email"] {
+        width: 500px;
+        color: #C4C4C4;
+        border: transparent;
+        max-width: 800px;
+        background: transparent;
+        border-bottom: 1px solid #C4C4C4;
+    }
+    
+    input[type="checkbox"] {
+        margin-left: -200px;
+    }
+    
+    select {
+        width: 500px;
+        color: #C4C4C4;
+        border: transparent;
+        max-width: 800px;
+        border-bottom: 1px solid #C4C4C4;
+        background: transparent;
+    }
+    
+    .radio {
+        padding: 10px 0px;
+        border-top: 1px solid #353232;
+        border-left: 1px solid #363434;
+        border-right: 1px solid #0c202b;
+        border-bottom: 1px solid #0c202b;
+    }
+    
+    .radio__label {
+        margin: 20px;
+        cursor: pointer;
+    }
+    
+    .radio__input {
+        display: none;
+    }
+    
+    .radio__input:checked+.radio__label {
+        margin: 0px;
+        padding: 10px 30px;
+        background: linear-gradient(to bottom right, #EDDEBF 0%, #19587D 100%);
+    }
+    
+    textarea {
+        width: 500px;
+        color: #C4C4C4;
+        border: transparent;
+        max-width: 800px;
+        border-bottom: 1px solid #C4C4C4;
+        background: transparent;
+    }
+    
+    footer {
+        height: 650px;
+        background-color: var(--primary-black-color);
+    }
+    
+    .footer {
+        padding-top: 7%;
+    }
+    
+    .end {
+        margin: 0 7%;
+    }
+    
+    .citations {
+        text-align: center;
+        padding-top: 10%;
+        font-size: 18px;
+    }
+    
+    .author {
+        font-size: 12px;
+    }
+    
+    .right-quote {
+        padding-top: 20%;
+    }
+    
+    .media-footer {
+        word-spacing: 1.5rem;
+    }
