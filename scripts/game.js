@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
 
-    // ****************************************************************************************************
     // Hover on buttons
     $(".hover").on({
         mouseenter: function() {
@@ -14,6 +13,19 @@ $(document).ready(function() {
 
     });
     $(".btn").on({
+        mouseenter: function() {
+            $(this).css({
+                "background": "linear-gradient(to bottom right, #EDDEBF 40%, #890008 100%)",
+            });
+        },
+        mouseleave: function() {
+            $(this).css({
+                "background": "linear-gradient(to bottom right, #EDDEBF 0%, #890008 100%)",
+
+            });
+        },
+    });
+    $("#submit").on({
         mouseenter: function() {
             $(this).css({
                 "background": "linear-gradient(to bottom right, #EDDEBF 40%, #890008 100%)",
@@ -95,9 +107,9 @@ $(document).ready(function() {
                 if (userAnswer === currentQuestion.correctAnswer) {
                     numCorrect++;
 
-                    answerContainers[questionNumber].style.color = 'green';
+                    answerContainers[questionNumber].style.color = '#88f078';
                 } else {
-                    answerContainers[questionNumber].style.color = 'pink';
+                    answerContainers[questionNumber].style.color = '#fd797b';
                 }
             });
 
@@ -249,7 +261,4 @@ $(document).ready(function() {
 
         submitButton.addEventListener('click', showResults);
     })();
-
-
-
 });

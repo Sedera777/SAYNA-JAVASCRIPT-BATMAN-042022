@@ -105,7 +105,8 @@
         filter: grayscale(0);
     }
     
-    .btn {
+    .btn,
+    #submit {
         opacity: 0.7;
         padding: 15px 70px;
         font-weight: bold;
@@ -129,94 +130,28 @@
         background: var(--primary-black-color);
     }
     
-    #popUpBox {
-        top: 20%;
-        left: 50%;
-        width: 40vw;
-        height: 400px;
-        display: none;
-        font-size: 22px;
-        font-weight: bold;
-        position: absolute;
-        border-radius: 10px;
-        opacity: 0.7;
-        transform: translate(-50%);
+    .question {
+        font-size: 16px;
+        padding-bottom: 20px;
         font-family: 'Space Grotesk', sans-serif;
-        background: linear-gradient(to bottom right, #EDDEBF 0%, #19587D 100%);
     }
     
-    #closeBtn {
-        float: right;
-        font-size: 17px;
-        margin-right: 10px;
-        cursor: pointer;
+    .answers:hover {
+        background: #fff19536;
     }
     
-    #msg {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%);
+    .answers {
+        font-size: 14px;
+        margin-bottom: 20px;
+        font-family: 'Space Grotesk', sans-serif;
     }
     
-    .formulaire {
-        display: grid;
-        place-items: center;
-        font-family: 'Rajdhani', sans-serif;
+    .answers label {
+        display: block;
     }
     
-    input[type="email"] {
-        width: 500px;
-        color: #C4C4C4;
-        border: transparent;
-        max-width: 800px;
-        background: transparent;
-        border-bottom: 1px solid #C4C4C4;
-    }
-    
-    input[type="checkbox"] {
-        margin-left: -200px;
-    }
-    
-    select {
-        width: 500px;
-        color: #C4C4C4;
-        border: transparent;
-        max-width: 800px;
-        border-bottom: 1px solid #C4C4C4;
-        background: transparent;
-    }
-    
-    .radio {
-        padding: 10px 0px;
-        border-top: 1px solid #353232;
-        border-left: 1px solid #363434;
-        border-right: 1px solid #0c202b;
-        border-bottom: 1px solid #0c202b;
-    }
-    
-    .radio__label {
-        margin: 20px;
-        cursor: pointer;
-    }
-    
-    .radio__input {
-        display: none;
-    }
-    
-    .radio__input:checked+.radio__label {
-        margin: 0px;
-        padding: 10px 30px;
-        background: linear-gradient(to bottom right, #EDDEBF 0%, #19587D 100%);
-    }
-    
-    textarea {
-        width: 500px;
-        color: #C4C4C4;
-        border: transparent;
-        max-width: 800px;
-        border-bottom: 1px solid #C4C4C4;
-        background: transparent;
+    input[type="radio"] {
+        width: 50px;
     }
     
     footer {
@@ -248,32 +183,4 @@
     
     .media-footer {
         word-spacing: 1.5rem;
-    }
-    
-    .question {
-        font-weight: 600;
-    }
-    
-    .answers {
-        margin-bottom: 20px;
-    }
-    
-    .answers label {
-        display: block;
-    }
-    
-    #submit {
-        font-family: sans-serif;
-        font-size: 20px;
-        background-color: #279;
-        color: #fff;
-        border: 0px;
-        border-radius: 3px;
-        padding: 20px;
-        cursor: pointer;
-        margin-bottom: 20px;
-    }
-    
-    #submit:hover {
-        background-color: #38a;
     }
