@@ -26,8 +26,8 @@
     }
     
     .container {
-        border-left: 1.5px solid var(--primary-gray-color);
-        border-right: 1.5px solid var(--primary-gray-color);
+        border-left: 1.5px solid #BCBBBD;
+        border-right: 1.5px solid #BCBBBD;
     }
     
     header {
@@ -44,9 +44,9 @@
     
     header nav {
         display: flex;
-        padding-top: 2%;
         font-size: 36px;
         margin: 0 5%;
+        padding: 66px 0;
         justify-content: space-between;
         font-family: 'Rajdhani', sans-serif;
     }
@@ -65,17 +65,26 @@
     }
     
     hr {
+        margin: 0;
         border: 2px solid;
+        color: #BCBBBD;
     }
     
     .box {
+        left: -600px;
         font-size: 18px;
         padding-top: 15%;
+        position: relative;
     }
     
     h1 {
         font-size: 36px;
         font-family: 'Rajdhani', sans-serif;
+    }
+    
+    h2 {
+        left: -800px;
+        position: relative;
     }
     
     .social-media {
@@ -85,7 +94,7 @@
         align-items: center;
         right: 6%;
         z-index: 7;
-        top: 25%;
+        top: 40%;
     }
     
     .media {
@@ -176,14 +185,14 @@
     #popUpBox {
         top: 20%;
         left: 50%;
-        width: 40vw;
+        width: 800px;
         height: 400px;
         display: none;
+        opacity: 0.7;
         font-size: 22px;
         font-weight: bold;
         position: absolute;
         border-radius: 10px;
-        opacity: 0.7;
         transform: translate(-50%);
         font-family: 'Space Grotesk', sans-serif;
         background: linear-gradient(to bottom right, #EDDEBF 0%, #19587D 100%);
@@ -201,6 +210,7 @@
         top: 30%;
         left: 50%;
         transform: translate(-50%);
+        text-align: center;
     }
     
     .formulaire {

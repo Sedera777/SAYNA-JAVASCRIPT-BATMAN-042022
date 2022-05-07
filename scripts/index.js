@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
 
-    // ****************************************************************************************************
     // Hover on buttons
     $(".hover").on({
         mouseenter: function() {
@@ -45,13 +44,12 @@ $(document).ready(function() {
             });
         },
     });
-
+    //pop-up-box
     // ****************************************************************************************************
     const popUpBox = document.getElementById('popUpBox');
     const closeBtn = document.getElementById('closeBtn');
     var msg = document.getElementById('msg');
     var value = document.querySelector('select');
-    var options = document.querySelectorAll('option');
     var checkBox = document.getElementById('check');
     var radio1 = document.getElementById('myRadio1');
     var radio2 = document.getElementById('myRadio2');
@@ -72,7 +70,7 @@ $(document).ready(function() {
 
         } else {
             popUpBox.style.display = 'block';
-            msg.innerText = 'Veuillez remplir tous les champs s\'il  vous plaît !!!';
+            msg.innerText = 'Veuillez remplir tous les champs s\'il  vous plaît !!! 🙏 ';
         }
 
 
@@ -82,6 +80,14 @@ $(document).ready(function() {
         popUpBox.style.display = 'none'
 
     })
+
+    // ****************************************************************************************************
+    let btn = document.getElementsByClassName('btn');
+    btn[0].href = '#heros';
+    btn[1].href = '#ennemis';
+
+    $('.box').animate({ left: '0px' }, 1800);
+    $('h2').animate({ left: '0px' }, 1800);
 
 
 
