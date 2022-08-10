@@ -1,16 +1,14 @@
     @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&family=Space+Grotesk:wght@400;700&display=swap');
      :root {
+        --redColor: #B11313;
+        --blueColor: #19587D;
         --yellowColor: #FFFF00;
         --yellowColorThin: #F8F184;
-        --blueColor: #19587D;
-        --redColor: #B11313;
-        --primary-black-color: #000000;
-        --secondary-black-color: #0D0E09;
         --primary-gray-color: #C4C4C4;
         --primary-white-color: #FFFFFF;
+        --primary-black-color: #000000;
+        --secondary-black-color: #0D0E09;
     }
-    /*
-*/
     
     * {
         margin: 0;
@@ -25,7 +23,8 @@
         font-family: 'Space Grotesk', sans-serif;
     }
     
-    .container {
+    .conteneur {
+        margin: 0 102px;
         border-left: 1.5px solid #BCBBBD;
         border-right: 1.5px solid #BCBBBD;
     }
@@ -43,10 +42,11 @@
     }
     
     header nav {
+        margin: 0 5%;
+        height: 132px;
         display: flex;
         font-size: 36px;
-        margin: 0 5%;
-        padding: 66px 0;
+        align-items: center;
         justify-content: space-between;
         font-family: 'Rajdhani', sans-serif;
     }
@@ -92,7 +92,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        right: 6%;
+        right: 67px;
         z-index: 7;
         top: 40%;
     }
@@ -130,37 +130,10 @@
         background: var(--primary-black-color);
     }
     
-    .question {
-        font-size: 16px;
-        padding-bottom: 20px;
-        font-family: 'Space Grotesk', sans-serif;
-    }
-    
-    .answers:hover {
-        background: #fff19536;
-    }
-    
-    .answers {
-        font-size: 14px;
-        margin-bottom: 20px;
-        font-family: 'Space Grotesk', sans-serif;
-    }
-    
-    .answers label {
-        display: block;
-    }
-    
-    input[type="radio"] {
-        width: 50px;
-    }
-    
     footer {
         height: 650px;
-        background-color: var(--primary-black-color);
-    }
-    
-    .footer {
         padding-top: 7%;
+        background-color: var(--primary-black-color);
     }
     
     .end {

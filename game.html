@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./Assets/css/game.css">
-    <script src="./scripts/jquery-3.6.0.js"></script>
+    <script src="./scripts/jquery-3.6.0.min.js"></script>
     <title>Batman | Game</title>
 </head>
 
 <body>
     <header>
-        <section class="container header-top">
+        <div class="conteneur header-top">
             <nav>
                 <div class="brand">
                     <a href=""><img class="img-fluid w-100 media" src="./Assets/Logos/logohome_yellow.png" alt="Logo de Batman"></a>
@@ -37,40 +37,49 @@
 
             </div>
             <div class="social-media">
-                <a href="#"><img class="img-fluid media" src="./Assets/Logos/logo_bat_flèche_yellow.png" alt="" style="width: 70px"> </a>
-                <a href=""><img class="img-fluid media py-3" src="./Assets/Logos/icon_facebook_yellow.png" alt="" style="width: 30px"></a>
-                <a href=""><img class="img-fluid media" src="./Assets/Logos/icon_ig_yellow.png" alt="" style="width: 30px"></a>
-                <a href=""><img class="img-fluid media py-3" src="./Assets/Logos/icon_twj_yellow.png" alt="" style="width: 30px"></a>
-                <a href="#contact"><img class="img-fluid media" src="./Assets/Logos/logo_bat_flèche_2_yellow.png" alt="" style="width: 70px"></a>
+                <a href="#"><img class="img-fluid media" src="./Assets/Logos/logo_bat_flèche_yellow.png" alt="flèche en haut" style="width: 70px"> </a>
+                <a href=""><img class="img-fluid media py-3" src="./Assets/Logos/icon_facebook_yellow.png" alt="facebook icone" style="width: 30px"></a>
+                <a href=""><img class="img-fluid media" src="./Assets/Logos/icon_ig_yellow.png" alt="instagram icone" style="width: 30px"></a>
+                <a href=""><img class="img-fluid media py-3" src="./Assets/Logos/icon_twj_yellow.png" alt="twitter icone" style="width: 30px"></a>
+                <a href="#contact"><img class="img-fluid media" src="./Assets/Logos/logo_bat_flèche_2_yellow.png" alt="flèche du bas" style="width: 70px"></a>
             </div>
+        </div>
     </header>
-    </section>
+
 
     <main>
-        <section id="black">
-            <div class="container">
+        <div id="black">
+            <div class="conteneur">
                 <div class="downArrow text-center"> <img src="./Assets/Logos/flèche_down_header.png" alt="flèche_down_header"></div>
-                <div class="content pb-5">
-                    <h2>QUIZ NIVEAU 1</h2>
-                    <br><br>
-                    <div id="quiz" class="col-md-4">
+                <div class="content pb-5 container" id="quizznum">
 
+                    <div id="quizznum1" class="container">
+                        <h2>QUIZ NIVEAU 1</h2>
+                        <div class="quizz-wrapper"></div>
                     </div>
-                    <button id="submit">Submit Quiz</button>
-                    <div id="results"></div>
+
+                    <div id="quizzresult"></div>
+
+                    <div id="quizznum2" class="container">
+                        <h2>QUIZ NIVEAU 2 : CONNAISSEZ VOUS BIEN LE CHEVALIER NOIR</h2>
+                        <div id="quizz2result"></div>
+                        <div class="slider-quizz-wrapper">
+                            <div class="quizz-counter">
+                                <span class="curr"></span>
+                                <span class="all"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
+                <div class="text-center"><img class="img-fluid w-75" src="./Assets/img/Game/Batgame2.png" alt="Batman Photo"></div>
 
-                <div class="content pb-5">
-                    <h2 class="text-uppercase">Quiz niveau 2 : connaissez vous bien le chevalier noir ?
-                    </h2> <br><br>
-                    <div class="batgame2 text-center"> <img class="img-fluid w-100" src="./Assets/img/Game/Batgame2.png" alt=""></div>
-                </div><br><br>
-                <p class="text-center mb-0"><input type="submit" class="btn" value="DEMARRER LE QUIZ"></p>
+                <br><br>
+                <p class="text-center m-0"><button id="startQuizz2" class="btn">DEMARER LE QUIZZ</button></p>
+
             </div>
-        </section>
-
-
-
+        </div>
 
 
     </main>
@@ -78,7 +87,7 @@
     <footer>
 
         <div class="text-center pt-5">
-            <img class="mx-3" src="./Assets/Logos/icon_WB.png" alt="">Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+            <img class="mx-3" src="./Assets/Logos/icon_WB.png" alt="Warner Brother's">Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
         </div><br><br>
         <div class="media-footer text-center">
             <a href=""><img class='media' src="./Assets/Logos/logo_sayna_white_yellow.png" alt=""></a>
@@ -89,9 +98,6 @@
             <a href=""><img class="media" src="./Assets/Logos/icon_twj_yellow.png" alt="" style="width: 30px"></a>
         </div>
     </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
     <script src="./scripts/game.js"></script>
 </body>
 

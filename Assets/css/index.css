@@ -9,13 +9,11 @@
         --primary-gray-color: #C4C4C4;
         --primary-white-color: #FFFFFF;
     }
-    /*
-*/
     
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box
+        box-sizing: border-box;
     }
     
     body {
@@ -25,7 +23,8 @@
         font-family: 'Space Grotesk', sans-serif;
     }
     
-    .container {
+    .conteneur {
+        margin: 0 102px;
         border-left: 1.5px solid #BCBBBD;
         border-right: 1.5px solid #BCBBBD;
     }
@@ -46,8 +45,9 @@
         display: flex;
         font-size: 36px;
         margin: 0 5%;
-        padding: 66px 0;
+        height: 132px;
         justify-content: space-between;
+        align-items: center;
         font-family: 'Rajdhani', sans-serif;
     }
     
@@ -92,7 +92,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        right: 6%;
+        right: 67px;
         z-index: 7;
         top: 40%;
     }
@@ -135,14 +135,18 @@
     }
     
     #slider {
-        background: url(../img/Home/Batslider1.png) no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 565px;
+        background: var(--primary-black-color);
     }
     
     .slider {
-        height: 565px;
+        position: relative;
+    }
+    
+    .slideshow-img {
+        left: 5%;
+        width: 90%;
+        display: none;
+        position: relative;
     }
     
     #nemesis {
@@ -174,6 +178,10 @@
     .left-arrow,
     .right-arrow {
         cursor: pointer;
+    }
+    
+    #reference {
+        color: #F8F184;
     }
     
     #newsletter {
@@ -222,7 +230,7 @@
     input[type="email"] {
         width: 500px;
         color: #C4C4C4;
-        border: transparent;
+        border: none;
         max-width: 800px;
         background: transparent;
         border-bottom: 1px solid #C4C4C4;
@@ -294,6 +302,11 @@
     
     .author {
         font-size: 12px;
+    }
+    
+    .slidingparagraphe {
+        position: relative;
+        display: none;
     }
     
     .right-quote {
