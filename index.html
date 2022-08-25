@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./Assets/css/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/Logos/home.png">
     <script src="./scripts/jquery-3.6.0.min.js"></script>
     <title>Batman | Home</title>
 </head>
@@ -54,7 +55,7 @@
         <div id="black">
             <div class="conteneur">
                 <div class="downArrow text-center"> <img src="./Assets/Logos/flèche_down_header.png" alt="flèche_down_header"></div>
-                <div class="content pb-5">
+                <div class="content pb-5 scroll-show">
                     <h2 id="heros">BATMAN AU CINÉMA</h2>
                     <p>Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le comic book Detective Comics en 1939. Batman se différencie
                         de Superman, alors héros majeur de DC, car il n’a aucun pouvoir. Il sera porté au cinema pour la première fois en 1943 par Lewis Wilson et bénéficiera de nombreux reboot, donnant l’occasion à de multiples acteurs d’interpréter
@@ -62,7 +63,7 @@
                 </div>
 
 
-                <div class="card-image">
+                <div class="card-image scroll-show">
                     <img class="img-fluid w-25" src="./Assets/img/Home/Bathome2.png" alt="Batman1">
                     <img class="img-fluid w-25" src="./Assets/img/Home/Bathome3.png" alt="Batman2">
                     <img class="img-fluid w-25" src="./Assets/img/Home/Bathome4.png" alt="Batman3">
@@ -87,15 +88,13 @@
             </div>
         </div>
 
-
         <div id="nemesis">
-            <div class="conteneur">
-                <div class="content pt-5">
+            <div class="conteneur scroll-show">
+                <div class="content pt-5 pb-5">
                     <h2 id="ennemis">NÉMÉSIS</h2>
                     <p>Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou psychopathes. Avec son introduction dans la Justice League
                         il aura l’occasion de se mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmis les derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :</p>
                 </div>
-                <br><br><br>
                 <div class="card-image">
                     <img class="img-fluid w-25" src="./Assets/img/Home/Bathome5.png" alt="Ennemi Batman1">
                     <img class="img-fluid w-25" src="./Assets/img/Home/Bathome6.png" alt="Ennemi Batman2">
@@ -110,11 +109,10 @@
 
             <div class="conteneur">
                 <h2 class="multimedia">MULTIMÉDIA</h2>
-                <br><br><br>
-                <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center scroll-show mt-5">
                     <div class="left-arrow content"> <img class="img-fluid" src="Assets/Logos/icones/icon_flèche_1.png" alt="left-arrow" onclick="prev(), changeContent()"></div>
                     <div class="card card-multimedia col-md-5 mx-auto" style=" max-width: 540px">
-                        <div class="row g-0 ">
+                        <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="./Assets/img/Home/Bathome8.png " class="img-fluid w-100 mainImage" alt="Bo Batman Begins">
                             </div>
@@ -123,7 +121,7 @@
                                     <h5 class="card-title ">ACTION, ADVENTURE</h5>
                                     <h6 id="card-subtitle">Batman Begins</h6>
                                     <p id="reference">IMDB:8.2</p>
-                                    <p class="card-text">Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul,
+                                    <p class="card-text mb-0">Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul,
                                         se chargera de son entraînement. De retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.</p>
                                 </div>
                             </div>
@@ -131,27 +129,21 @@
                     </div>
                     <div class="right-arrow content"> <img class="img-fluid" src="Assets/Logos/icones/icon_flèche_2.png" alt="right-arrow" onclick="next(), changeContent()"></div>
                 </div>
-                <br><br><br>
-                <div class="trailer text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                <br><br><br><br><br>
+                <div class="pt-5 trailer text-center scroll-show pb-5"><iframe width="640" height="480" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
         </div>
 
         <div id="newsletter">
-
             <div id="popUpBox">
                 <span id="closeBtn">&times;</span>
-
                 <div id="msg"></div>
             </div>
 
-
             <div class="conteneur">
                 <br><br><br>
-
                 <h3 class="text-center fw-bold" id="contact">PRENONS CONTACT</h3>
                 <br><br><br>
-                <div class="formulaire col-md-12">
+                <div class="formulaire col-md-12 scroll-show">
                     <form action="/" method="post" id="confirm">
 
                         <label for="email">ADRESSE MAIL</label><br>
@@ -188,14 +180,13 @@
                         <p class="text-center"><input type="submit" class="btn" value="CONFIRMER"></p>
                     </form>
                 </div>
-                <br><br><br><br> <br><br><br><br>
             </div>
         </div>
     </main>
 
     <footer>
         <div class="conteneur footer">
-            <div class="d-flex justify-content-between end">
+            <div class="d-flex justify-content-between end scroll-show">
                 <div class="left-quote"><img src="Assets/Logos/icones/icon_guillemets_1.png" alt="left-quote"></div>
 
                 <div class="citations">
@@ -243,12 +234,12 @@
                 <div class="right-quote"><img src="Assets/Logos/icones/icon_guillemets_2.png" alt="right-quote"></div>
             </div>
 
-            <div class="text-center pt-5">
+            <div class="text-center pt-5 scroll-show">
                 <img class="mx-3" src="./Assets/Logos/icon_WB.png" alt="Warner Brother's">Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
             </div>
             <br><br>
         </div>
-        <div class="media-footer text-center">
+        <div class="media-footer text-center scroll-show">
             <a href=""><img class='media' src="./Assets/Logos/logo_sayna_white_yellow.png" alt="Sayna Logo"></a>
             <a href=""><img class="media" src="./Assets/Logos/icon_x.png" alt="X"></a>
             <a href=""><img class="media" src="./Assets/Logos/icon_DC_yellow.png" alt="DC"></a>

@@ -87,6 +87,17 @@
         position: relative;
     }
     
+    .scroll-show>* {
+        opacity: 0;
+        transform: scale(0);
+    }
+    
+    .show {
+        opacity: 1;
+        transform: scale(1);
+        transition: 2s;
+    }
+    
     .social-media {
         position: fixed;
         display: flex;
@@ -156,4 +167,13 @@
     
     .media-footer {
         word-spacing: 1.5rem;
+    }
+    
+    @media screen and (max-width:768px) {
+        .conteneur {
+            margin: 0 20px;
+        }
+        .social-media {
+            right: -14px;
+        }
     }

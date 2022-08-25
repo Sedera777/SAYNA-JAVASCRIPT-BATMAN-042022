@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
     // Hover on buttons
     $(".hover").on({
         mouseenter: function() {
@@ -44,6 +43,23 @@ $(document).ready(function() {
             });
         },
     });
+
+    /* Apparition au défilement */
+    const $options = { root: null, rootMargin: "0px", threshold: 0.1 }
+    const $ratio = 0.17
+    $show = function(entries, $observer) {
+        entries.forEach($entry => {
+            if ($entry.intersectionRatio > $ratio) {
+                $($entry.target).addClass("show").slideDown(3000);
+                $observer.unobserve($entry.target);
+            }
+        });
+    }
+    const $observer = new IntersectionObserver($show, $options)
+    const $scrollShow = $(".scroll-show,.scroll-show > *")
+    for (let i = 0; i < $scrollShow.length; i++) {
+        $observer.observe($scrollShow[i])
+    }
     //pop-up-box
     // ****************************************************************************************************
     const popUpBox = document.getElementById('popUpBox');

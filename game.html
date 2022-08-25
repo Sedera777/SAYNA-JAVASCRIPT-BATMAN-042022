@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./Assets/css/game.css">
+    <link rel="icon" type="image/x-icon" href="Assets/Logos/source-code.png">
     <script src="./scripts/jquery-3.6.0.min.js"></script>
     <title>Batman | Game</title>
 </head>
@@ -51,7 +52,7 @@
         <div id="black">
             <div class="conteneur">
                 <div class="downArrow text-center"> <img src="./Assets/Logos/flèche_down_header.png" alt="flèche_down_header"></div>
-                <div class="content pb-5 container" id="quizznum">
+                <div class="content pb-5 container scroll-show" id="quizznum">
 
                     <div id="quizznum1" class="container">
                         <h2>QUIZ NIVEAU 1</h2>
@@ -73,10 +74,10 @@
 
 
                 </div>
-                <div class="text-center"><img class="img-fluid w-75" src="./Assets/img/Game/Batgame2.png" alt="Batman Photo"></div>
+                <div class="text-center scroll-show"><img class="img-fluid w-75" src="./Assets/img/Game/Batgame2.png" alt="Batman Photo"></div>
 
                 <br><br>
-                <p class="text-center m-0"><button id="startQuizz2" class="btn">DEMARER LE QUIZZ</button></p>
+                <p class="text-center m-0 scroll-show"><button id="startQuizz2" class="btn">DEMARER LE QUIZZ</button></p>
 
             </div>
         </div>
@@ -84,7 +85,7 @@
 
     </main>
 
-    <footer>
+    <footer class="scroll-show">
 
         <div class="text-center pt-5">
             <img class="mx-3" src="./Assets/Logos/icon_WB.png" alt="Warner Brother's">Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
